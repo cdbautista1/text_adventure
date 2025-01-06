@@ -139,4 +139,3 @@ def graveyard(area, player_class):
 
                 else:
                     print('The apparition waits, its glowing eyes fixed on you. Choose "left" or "right".')
->>>>>>> 84c7c179c8fcd0eb4efe70d515fc28cb8027ce3a

@@ -1,21 +1,7 @@
-# towards in graveyard doesn't work, can't type in weapon name 
-# away doesn't kick out of game, instead chooses between weapons
 
-# left scroll works, but doesn't give item name
-# right scroll works
-
-
+# create rarities on items
 # create an inventory function
-# work on right scroll for combat
-# move on from location when finished
-
-import random
-from graveyard_location import graveyard
-from crypt_location import crypt
-from woods_location import woods
-from items import warrior_items, mage_items, archer_items
-from weather import weather  
-from player_classes import Warrior, Mage, Archer     
+# finish graveyard, combat last
 
 
 import random
@@ -82,6 +68,3 @@ elif path == 'Woods':
     woods(path, player_class)
 elif path == 'Crypt':
     crypt(path, player_class)
-
-
->>>>>>> 84c7c179c8fcd0eb4efe70d515fc28cb8027ce3a

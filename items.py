@@ -1,4 +1,5 @@
-<<<<<<< HEAD
+# add rarities to items
+
 class Item:
     def __init__(self, name, description, effect):
         self.name = name
