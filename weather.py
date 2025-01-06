@@ -1,1 +1,2 @@
 weather = ['rainy', 'sunny', 'foggy']
+

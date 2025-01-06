@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 class Item:
     def __init__(self, name, description, effect):
         self.name = name
@@ -99,4 +100,3 @@ archer_items = {
         Item("Vial of Woodland Strength", "A potion made from forest herbs that grants endurance.", "Reduces damage taken by 20% and increases stamina.")
     ]
 }
-

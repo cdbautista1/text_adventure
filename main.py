@@ -82,3 +82,6 @@ elif path == 'Woods':
     woods(path, player_class)
 elif path == 'Crypt':
     crypt(path, player_class)
+
+
+>>>>>>> 84c7c179c8fcd0eb4efe70d515fc28cb8027ce3a
