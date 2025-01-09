@@ -20,26 +20,26 @@ def choose_player_class():
         if player_class == 'Warrior':
             print('You are a Warrior, forged in the fires of battle. With strength unmatched and a will of iron, you stand at the forefront, '
                   'cleaving enemies with mighty blows. Your armor clinks as you adjust your grip on your weapon, ready for the trials ahead.')
-            return 'Warrior'
+            return Warrior()
 
         elif player_class == 'Mage':
             print('You are a Mage, a master of the arcane arts. The elements bend to your will, and your knowledge grants you power beyond the reach of mortal strength.'
             'The hum of latent energy surrounds you as you prepare your spells for the coming storm.')
-            return 'Mage'
+            return Mage()
 
         elif player_class == 'Archer':
             print('You are an Archer, swift and precise. From the shadows, you rain death upon your foes with unerring accuracy. The pull of your bowstring is your '
                   'symphony, and your arrows sing of justice—or vengeance.')
-            return 'Archer'
+            return Archer()
 
         else:
             print('Your destiny lies in your choice. Choose wisely: Warrior, Mage, or Archer.')
 
 def choose_area():
     while True:
-        area = input('Choose your path (Graveyard, Woods, Crypt) or type "exit" to exit: ')
-        if area in ['Graveyard', 'Woods', 'Crypt']:
-            return area
+        area = input('Choose your path (Graveyard, Woods, Crypt) or type "exit" to exit: ').strip().lower()
+        if area in ['graveyard', 'woods', 'crypt']:
+            return area.capitalize()
         
         elif area == 'exit':
             return area

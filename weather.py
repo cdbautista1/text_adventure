@@ -1,2 +1,2 @@
-weather = ['rainy', 'sunny', 'foggy']
+weather = ['rainy', 'sunny']
 
