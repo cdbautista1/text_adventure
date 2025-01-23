@@ -96,6 +96,11 @@ def choose_weapon(player_class_name): # Function for "towards" input
         print('You hesitate for too long, and the skeletons draw closer. You must act quickly!')
 
 
+def towards_combat(player_class_name):
+    print('You have chosen to combat the skeleton horde.')
+
+
+
 def handle_departure(player_class):
     # Handles the scenario when the player decides to leave the graveyard
     print(

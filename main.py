@@ -1,15 +1,11 @@
 
 # create rarities on items
 # create an inventory function
-# finish graveyard, combat last
 
 
-import random
 from graveyard_location import graveyard
 from crypt_location import crypt
 from woods_location import woods
-from items import warrior_items, mage_items, archer_items
-from weather import weather  
 from player_classes import Warrior, Mage, Archer     
 
 def choose_player_class():
@@ -47,12 +43,14 @@ def choose_area():
         else:
             print('Choose one of the three options.')
 
+
 start_of_game = """In the darkening dusk, you find yourself at the edge of an ancient kingdom, its spires looming ominously in the distance. 
 The path to the castle, where the King awaits your presence, is shrouded in mystery. Ahead of you, three distinct paths beckon, each fraught with danger and discovery.
 To your left lies the **Graveyard**, its towering tombstones and twisted trees casting long shadows. A chilling breeze whispers through the old stone, telling tales of those long forgotten.
 The middle path, the **Woods**, is dense with ancient trees, their gnarled roots entangling the ground like the fingers of the dead. Strange noises drift from within, and the scent of pine and earth fills the air.
 To the right, the **Crypt** stands foreboding, its stone archway darkened by the overgrowth of moss and vines. Legends speak of forgotten treasures buried deep within, though many who sought them never returned.
-Only one path can lead you to the King, but which one will you choose?"""
+Only one path can lead you to the King, but which one will you choose? Embark on **The Haunted Journey**, where each decision could seal your fate..."""
+
 
 areas = ['Graveyard', 'Woods', 'Crypt', 'Castle']
 
