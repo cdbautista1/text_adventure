@@ -69,7 +69,7 @@ def describe_rainy_weather():
           '\n Though I\'m fleeting, I paint the sky,'
           '\n A bridge of color, soaring high.”'
           '\n What am I? Think carefully and choose your answer.'
-
+          # rainbow
     )
 
 
@@ -86,17 +86,51 @@ def describe_sunny_weather():
           '\n I am a form, but no solid shape,'
           '\n A darkened twin, I twist and scrape.”'
           '\n Take a moment to ponder the riddle and give your answer.'
+            # shadow
     )
 
 
 def handle_rainy_weather(player_class):
-    describe_rainy_weather()
-    rainy_riddle()
+    describe_rainy_weather() 
+    incorrect_guesses = 0  
+    while True:
+        user_input = input('The inscription glows faintly. What is your answer? ').strip().lower()
+
+        if user_input == 'rainbow':
+            print('The glow intensifies, and the rain begins to lighten as if acknowledging your wisdom. You have answered correctly.')
+            break
+        else:
+            incorrect_guesses += 1
+            if incorrect_guesses == 1:
+                print("Hint: The answer appears after the sky weeps but only when light breaks through the gloom.")
+            elif incorrect_guesses == 2:
+                print("Hint: It arches high in the sky, painting it with vibrant colors that fade as quickly as they form.")
+            elif incorrect_guesses == 3:
+                print("Hint: It is born from both water and light, a fleeting bridge that connects earth and sky.")
+            else:
+                print("The rain continues to fall, but the answer lies in its aftermath. Think carefully!")
 
 
 def handle_sunny_weather(player_class):
     describe_sunny_weather()
-    sunny_riddle()
+    incorrect_guess = 0
+    while True:
+        user_input = input('The inscription glows faintly. What is your answer? ').strip().lower()
+
+        if user_input == 'shadow':
+            print('The plaque glows softly, its approval evident. The shadows around you seem to retreat, leaving the path ahead clear.')
+            break
+        else:
+            incorrect_guess += 1
+            if incorrect_guess == 1:
+                print('Hint: I am always with you, yet you cannot hold me.')
+            elif incorrect_guess == 2:
+                print('Hint: I exist because of light, but I am not light.')
+            elif incorrect_guess == 3:
+                print('Hint: I follow your every move, though I am silent and shapeless.')
+            else:
+                print('The plaque dims slightly, but it does not give up on you. The answer is closer than you think.')
+
 
 
 def rainy_riddle():
